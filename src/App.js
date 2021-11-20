@@ -1,8 +1,11 @@
 /* eslint-disable no-useless-constructor */
 import logo from './logo.svg';
 import './App.css';
-import MyComponent from './components/MyComponent';
 import React, { Component } from 'react';
+
+import MyComponent from './components/MyComponent';
+import Welcome from './components/Welcome'
+
 
 class App extends Component {
   constructor(props){
@@ -18,6 +21,7 @@ class App extends Component {
     return (
       <div>
         <MyComponent title="React" onButtonClicked={this.onClickBtn} />
+        <Welcome />
       </div>
     );
   }
