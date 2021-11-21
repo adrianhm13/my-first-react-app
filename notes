@@ -53,3 +53,11 @@ We pass a function as an argument (instead of the regular object) to fetch the p
       this.setState(prevState => ({
         count: prevState.count + 1
     }))
+
+
+---------------CONDITIONAL RENDERING--------------------
+
+1- if/else
+2- Element variables
+3- Ternary conditional operator
+4- Short circuit operator
