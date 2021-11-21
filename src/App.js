@@ -14,6 +14,7 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import Stylesheet from "./components/Stylesheet";
 
 
 class App extends Component {
@@ -28,8 +29,9 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        <NameList />
+      <div className="App">
+        <Stylesheet primary={true}/>
+        {/* <NameList /> */}
         {/* <UserGreeting /> */}
         {/* <ParentComponent /> */}
         {/* <EventBind /> */}
