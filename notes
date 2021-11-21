@@ -23,3 +23,33 @@ Props:                                          State:
 -Props are immutable                            -State can be changed
 -Props: Functional Components                   -useState Hook: Functional Components
  this.props: Class Components                   -this.state: Class Components
+
+-------------SET STATE-----------------
+
+-Always make use of setState and never modify the state directly.
+
+-Code has to bne executed after the state has been updated?
+
+Set State it's asynchronous, so we can use the second parameter from the setState function to get 
+the value once the asynchronous function it's done fetching the info.
+
+Example: 
+
+  increment() {
+    this.setState(
+      {
+        count: this.state.count + 1,
+      },
+      () => {
+        console.log("Callback value", this.state.count); --> Exact value
+      }
+    );
+    console.log(this.state.count); --> One value less.
+  }
+
+-React groups multiple set state calls into one for better performance. So when you need to use the previous state to render something new:
+We pass a function as an argument (instead of the regular object) to fetch the prevState.
+
+      this.setState(prevState => ({
+        count: prevState.count + 1
+    }))
