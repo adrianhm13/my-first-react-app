@@ -8,6 +8,8 @@ import Message from "./components/Message";
 import MyComponent from "./components/MyComponent";
 import Welcome from "./components/Welcome";
 import Hello from "./components/Hello";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
 
 
 class App extends Component {
@@ -23,17 +25,19 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Counter />
+        <FunctionClick />
+        <ClassClick />
+        {/* <Counter /> */}
         {/* <Message /> */}
         {/* <MyComponent title="React" onButtonClicked={this.onClickBtn} />
         <Welcome />
         <Hello name="Bruce">
           <p>This is children props</p>
         </Hello>
-        <Hello name="Clark" />
-        <Hello name="Diana" />
-        <Welcome name="Bruce" heroName="Batman" />
-        <Welcome name="Clark" heroName="Superman" />
+        <Hello name="Clark" /> */}
+        {/* <Hello name="Diana" heroName="Wonder Woman" />
+        <Welcome name="Bruce" heroName="Batman" /> */}
+        {/* <Welcome name="Clark" heroName="Superman" />
         <Welcome name="Diana" heroName="Wonder Woman" /> */}
       </div>
     );
