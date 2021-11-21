@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 import MyComponent from './components/MyComponent';
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
+import Message from './components/Message'
 
 class App extends Component {
   constructor(props){
@@ -20,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <MyComponent title="React" onButtonClicked={this.onClickBtn} />
+        {/* <MyComponent title="React" onButtonClicked={this.onClickBtn} />
         <Welcome />
         <Hello name="Bruce">
           <p>This is children props</p>
@@ -29,7 +30,8 @@ class App extends Component {
         <Hello name="Diana" />
         <Welcome name="Bruce" heroName="Batman" />
         <Welcome name="Clark" heroName="Superman" />
-        <Welcome name="Diana" heroName="Wonder Woman" />
+        <Welcome name="Diana" heroName="Wonder Woman" /> */}
+        <Message />
       </div>
     );
   }

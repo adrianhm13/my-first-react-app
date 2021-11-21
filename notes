@@ -14,3 +14,12 @@ Functional components and Class components
 -JSX makes your react code simpler and elegant.
 -JSX ultimately transpiles to pure JavaScript which is understood by the browsers.
 
+-----------PROPS VS STATE-------------
+
+Props:                                          State:
+
+-Get passed to the component                    -state is managed within the component
+-Function parameters                            -Variables declared in the function body
+-Props are immutable                            -State can be changed
+-Props: Functional Components                   -useState Hook: Functional Components
+ this.props: Class Components                   -this.state: Class Components
